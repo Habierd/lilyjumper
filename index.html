@@ -9,7 +9,6 @@
   <meta name="format-detection" content="telephone=no" />
   <title>Lily Jumper | Evolución y Luz</title>
   <meta name="description" content="Domina la gravedad. Cuerdas de salto futuristas y luminosas para tu evolución física y mental." />
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
@@ -19,13 +18,11 @@
       --sky: #5aa9c1;
       --violet: #5d3288;
       --bg: #f4f8fc;
-      --surface: rgba(255,255,255,0.88);
-      --glass: rgba(255,255,255,0.92);
       --text: #17131f;
       --text-muted: #6c6780;
-      --shadow: 0 18px 60px rgba(37, 34, 50, 0.12);
-      --glow-sky: 0 0 10px rgba(90,169,193,0.45), 0 0 24px rgba(90,169,193,0.18);
-      --glow-violet: 0 0 10px rgba(93,50,136,0.42), 0 0 24px rgba(93,50,136,0.16);
+      --shadow: 0 18px 60px rgba(37,34,50,.12);
+      --glow-sky: 0 0 10px rgba(90,169,193,.45), 0 0 24px rgba(90,169,193,.18);
+      --glow-violet: 0 0 10px rgba(93,50,136,.42), 0 0 24px rgba(93,50,136,.16);
       --font-body: 'Montserrat', sans-serif;
       --font-logo: 'Bukhari Script', 'Montserrat', cursive;
       --safe-top: env(safe-area-inset-top, 0px);
@@ -52,8 +49,8 @@
     body {
       font-family: var(--font-body);
       background:
-        radial-gradient(circle at top left, rgba(90,169,193,0.22), transparent 30%),
-        radial-gradient(circle at top right, rgba(93,50,136,0.12), transparent 28%),
+        radial-gradient(circle at top left, rgba(90,169,193,.22), transparent 30%),
+        radial-gradient(circle at top right, rgba(93,50,136,.12), transparent 28%),
         linear-gradient(180deg, #fafcff 0%, var(--bg) 55%, #f7f9fd 100%);
       color: var(--text);
       overflow-x: hidden;
@@ -65,10 +62,10 @@
       position: fixed;
       inset: 0;
       background-image:
-        linear-gradient(rgba(90,169,193,0.045) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(90,169,193,0.045) 1px, transparent 1px);
+        linear-gradient(rgba(90,169,193,.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(90,169,193,.045) 1px, transparent 1px);
       background-size: 42px 42px;
-      opacity: 0.55;
+      opacity: .55;
       pointer-events: none;
       z-index: -4;
     }
@@ -79,7 +76,7 @@
       width: 100%;
       height: 100%;
       z-index: -3;
-      opacity: 0.65;
+      opacity: .65;
     }
 
     .container {
@@ -94,7 +91,7 @@
       border-radius: 50%;
       filter: blur(120px);
       z-index: -2;
-      opacity: 0.62;
+      opacity: .62;
       pointer-events: none;
       mix-blend-mode: multiply;
     }
@@ -104,7 +101,7 @@
       left: -8%;
       width: 45vw;
       height: 45vw;
-      background: rgba(90,169,193,0.34);
+      background: rgba(90,169,193,.34);
       animation: pulseAura 8s infinite alternate;
     }
 
@@ -113,13 +110,13 @@
       right: -10%;
       width: 50vw;
       height: 50vw;
-      background: rgba(93,50,136,0.26);
+      background: rgba(93,50,136,.26);
       animation: pulseAura 10s infinite alternate-reverse;
     }
 
     @keyframes pulseAura {
-      0% { transform: scale(0.92); opacity: 0.32; }
-      100% { transform: scale(1.14); opacity: 0.62; }
+      0% { transform: scale(.92); opacity: .32; }
+      100% { transform: scale(1.14); opacity: .62; }
     }
 
     header {
@@ -127,11 +124,11 @@
       top: 0;
       width: 100%;
       z-index: 50;
-      background: rgba(255,255,255,0.88);
+      background: rgba(255,255,255,.88);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
-      border-bottom: 1px solid rgba(90,169,193,0.14);
-      box-shadow: 0 10px 30px rgba(15, 13, 24, 0.09);
+      border-bottom: 1px solid rgba(90,169,193,.14);
+      box-shadow: 0 0 40px rgba(90,169,193,.08), 0 0 70px rgba(93,50,136,.05);
       padding-top: var(--safe-top);
     }
 
@@ -144,10 +141,10 @@
     }
 
     .brand {
+      text-decoration: none;
       display: flex;
       align-items: center;
       gap: 8px;
-      text-decoration: none;
     }
 
     .brand-logo {
@@ -164,9 +161,8 @@
     }
 
     .brand-tagline {
-      font-family: var(--font-body);
-      font-size: 0.58rem;
-      letter-spacing: 0.32em;
+      font-size: .58rem;
+      letter-spacing: .32em;
       color: var(--text-muted);
       text-transform: uppercase;
       margin-top: 2px;
@@ -175,8 +171,8 @@
     }
 
     .cart-trigger {
-      background: linear-gradient(180deg, rgba(90,169,193,0.18), rgba(255,255,255,0.72));
-      border: 1px solid rgba(90,169,193,0.3);
+      background: linear-gradient(180deg, rgba(90,169,193,.18), rgba(255,255,255,.72));
+      border: 1px solid rgba(90,169,193,.3);
       padding: 10px 18px;
       border-radius: 999px;
       color: var(--text);
@@ -185,10 +181,10 @@
       align-items: center;
       gap: 10px;
       cursor: pointer;
-      transition: 0.25s ease;
-      box-shadow: inset 0 0 10px rgba(90,169,193,0.08), var(--shadow);
+      transition: .25s ease;
+      box-shadow: inset 0 0 10px rgba(90,169,193,.08), var(--shadow);
       min-height: 44px;
-      font-size: 0.75rem;
+      font-size: .75rem;
     }
 
     .badge {
@@ -199,7 +195,7 @@
       border-radius: 50%;
       display: grid;
       place-items: center;
-      font-size: 0.75rem;
+      font-size: .75rem;
       box-shadow: var(--glow-sky);
       font-weight: 900;
     }
@@ -213,7 +209,7 @@
     .reveal {
       opacity: 0;
       transform: translateY(24px);
-      transition: all 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all .85s cubic-bezier(.16,1,.3,1);
     }
 
     .reveal.show {
@@ -240,10 +236,10 @@
       display: inline-block;
       padding: 8px 18px;
       border-radius: 999px;
-      background: rgba(93,50,136,0.12);
-      border: 1px solid rgba(93,50,136,0.2);
+      background: rgba(93,50,136,.12);
+      border: 1px solid rgba(93,50,136,.2);
       color: var(--violet);
-      font-size: 0.72rem;
+      font-size: .72rem;
       font-weight: 800;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -279,16 +275,16 @@
       align-items: center;
       justify-content: center;
       padding: 16px 36px;
-      font-size: 0.92rem;
+      font-size: .92rem;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 1.5px;
       text-decoration: none;
       border-radius: 999px;
-      background: rgba(255,255,255,0.74);
+      background: rgba(255,255,255,.74);
       color: var(--text);
-      border: 2px solid rgba(90,169,193,0.55);
-      transition: 0.35s ease;
+      border: 2px solid rgba(90,169,193,.55);
+      transition: .35s ease;
       box-shadow: var(--shadow), var(--glow-sky);
       min-height: 52px;
       width: 100%;
@@ -297,7 +293,7 @@
     }
 
     .philosophy {
-      background: linear-gradient(180deg, transparent, rgba(90,169,193,0.06), transparent);
+      background: linear-gradient(180deg, transparent, rgba(90,169,193,.06), transparent);
       padding: 60px 0;
     }
 
@@ -310,12 +306,12 @@
 
     .glitch-box {
       aspect-ratio: 4/3;
-      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(240,244,250,0.96));
+      background: linear-gradient(180deg, rgba(255,255,255,.9), rgba(240,244,250,.96));
       border-radius: 20px;
-      border: 1px solid rgba(90,169,193,0.18);
+      border: 1px solid rgba(90,169,193,.18);
       position: relative;
       overflow: hidden;
-      box-shadow: inset 0 0 40px rgba(90,169,193,0.08), var(--shadow);
+      box-shadow: inset 0 0 40px rgba(90,169,193,.08), var(--shadow);
       display: grid;
       place-items: center;
     }
@@ -337,7 +333,7 @@
     .section-header p {
       color: var(--text-muted);
       line-height: 1.7;
-      font-size: 0.95rem;
+      font-size: .95rem;
     }
 
     .philosophy ul {
@@ -352,7 +348,7 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      font-size: 0.9rem;
+      font-size: .9rem;
       color: var(--text);
     }
 
@@ -370,23 +366,28 @@
 
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
+      grid-template-columns: 1fr;
+      gap: 14px;
       padding: 0 10px;
     }
 
     .product-card {
-      background: rgba(255,255,255,0.88);
-      border: 1px solid rgba(90,169,193,0.16);
-      border-radius: 18px;
-      padding: 14px;
-      transition: 0.28s ease;
+      background: linear-gradient(180deg, rgba(255,255,255,.94), rgba(248,251,255,.92));
+      border: 1px solid rgba(90,169,193,.16);
+      border-radius: 20px;
+      padding: 12px;
+      transition: .28s ease;
       display: flex;
       flex-direction: column;
       gap: 12px;
       position: relative;
       overflow: hidden;
       box-shadow: var(--shadow);
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow), var(--glow-sky), 0 0 28px rgba(93,50,136,.08);
     }
 
     .card-content {
@@ -396,49 +397,188 @@
       gap: 10px;
     }
 
-    .card-img {
+    .carousel-wrap {
+      position: relative;
       width: 100%;
-      aspect-ratio: 1;
-      border-radius: 14px;
-      overflow: hidden;
-      background: #dde3ee;
+      perspective: 1200px;
     }
 
+    .carousel-stage {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1.02;
+      transform-style: preserve-3d;
+      transition: transform .8s cubic-bezier(.16,1,.3,1);
+    }
+
+    .product-card.flipped .carousel-stage {
+      transform: rotateY(180deg);
+    }
+
+    .face {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #dde3ee;
+      box-shadow: inset 0 0 30px rgba(90,169,193,.08);
+    }
+
+    .face.back {
+      transform: rotateY(180deg);
+      background: linear-gradient(180deg, rgba(255,255,255,.95), rgba(237,246,251,.95));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+      border: 1px solid rgba(90,169,193,.12);
+    }
+
+    .card-img,
     .card-img img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
-    .card-title {
-      font-size: 1.02rem;
+    .back-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: .7rem;
       font-weight: 800;
-      line-height: 1.3;
+      background: rgba(93,50,136,.12);
+      color: var(--violet);
+      border: 1px solid rgba(93,50,136,.18);
+      margin-bottom: 10px;
+    }
+
+    .back-title {
+      font-size: 1rem;
+      font-weight: 900;
+      color: var(--text);
+      text-align: center;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+
+    .back-text {
+      font-size: .84rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      text-align: center;
+    }
+
+    .back-mini {
+      margin-top: 10px;
+      font-size: .8rem;
+      color: var(--sky);
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      line-height: 1.25;
       color: var(--text);
     }
 
     .card-price {
-      font-size: 1.2rem;
+      font-size: 1.22rem;
       font-weight: 900;
       color: var(--sky);
     }
 
-    .btn-add {
-      background: linear-gradient(180deg, rgba(90,169,193,0.18), rgba(255,255,255,0.82));
-      border: 1px solid rgba(93,50,136,0.22);
-      color: var(--text);
+    .card-copy {
+      font-size: .88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .product-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: .7rem;
+      font-weight: 800;
+    }
+
+    .pill.sky {
+      background: rgba(90,169,193,.12);
+      color: var(--sky);
+      border: 1px solid rgba(90,169,193,.18);
+    }
+
+    .pill.violet {
+      background: rgba(93,50,136,.12);
+      color: var(--violet);
+      border: 1px solid rgba(93,50,136,.18);
+    }
+
+    .btn-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .btn-add,
+    .btn-more {
       width: 100%;
       padding: 12px;
       border-radius: 12px;
       font-weight: 800;
       cursor: pointer;
       min-height: 44px;
-      font-size: 0.85rem;
+      font-size: .82rem;
+    }
+
+    .btn-add {
+      background: linear-gradient(180deg, rgba(90,169,193,.18), rgba(255,255,255,.82));
+      border: 1px solid rgba(93,50,136,.22);
+      color: var(--text);
+    }
+
+    .btn-more {
+      background: transparent;
+      border: 1px solid rgba(90,169,193,.22);
+      color: var(--sky);
+    }
+
+    .extra-panel {
+      display: none;
+      margin-top: 2px;
+      padding: 12px;
+      border-radius: 14px;
+      background: rgba(90,169,193,.06);
+      border: 1px solid rgba(90,169,193,.12);
+      animation: fadeInUp .35s ease;
+    }
+
+    .extra-panel.show {
+      display: block;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     footer {
-      background: rgba(255,255,255,0.88);
-      border-top: 1px solid rgba(90,169,193,0.16);
+      background: rgba(255,255,255,.88);
+      border-top: 1px solid rgba(90,169,193,.16);
       padding: 50px 0 calc(50px + var(--safe-bottom));
     }
 
@@ -453,7 +593,7 @@
       font-weight: 800;
       margin-bottom: 16px;
       text-transform: uppercase;
-      font-size: 0.9rem;
+      font-size: .9rem;
     }
 
     .footer-col p,
@@ -462,17 +602,17 @@
       text-decoration: none;
       display: block;
       margin-bottom: 10px;
-      font-size: 0.85rem;
+      font-size: .85rem;
     }
 
     .cart-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(12, 13, 20, 0.48);
+      background: rgba(12,13,20,.48);
       backdrop-filter: blur(8px);
       opacity: 0;
       pointer-events: none;
-      transition: 0.4s;
+      transition: .4s;
       z-index: 100;
     }
 
@@ -488,28 +628,28 @@
       width: 100vw;
       height: calc(100vh - var(--safe-top) - var(--safe-bottom));
       max-width: 380px;
-      background: rgba(255,255,255,0.94);
+      background: rgba(255,255,255,.94);
       backdrop-filter: blur(24px);
-      border-left: 1px solid rgba(90,169,193,0.18);
-      box-shadow: -10px 0 50px rgba(0,0,0,0.2);
+      border-left: 1px solid rgba(90,169,193,.18);
+      box-shadow: -10px 0 50px rgba(0,0,0,.2);
       transform: translateX(100%);
-      transition: 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: .45s cubic-bezier(.16,1,.3,1);
       z-index: 101;
       display: flex;
       flex-direction: column;
-      padding-top: calc(max(var(--safe-top), 20px));
-      padding-bottom: calc(max(var(--safe-bottom), 20px));
+      padding-top: calc(max(var(--safe-top),20px));
+      padding-bottom: calc(max(var(--safe-bottom),20px));
     }
 
     .cart-panel.active {
       transform: translateX(0);
     }
 
-    @media (max-width: 768px) {
+    @media (max-width:768px) {
       .cart-panel {
         width: 100vw;
         max-width: none;
-        height: 52vh;
+        height: 58vh;
         top: auto;
         bottom: 0;
         border-left: none;
@@ -525,11 +665,11 @@
 
     .cart-header {
       padding: 18px 20px;
-      border-bottom: 1px solid rgba(90,169,193,0.12);
+      border-bottom: 1px solid rgba(90,169,193,.12);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(255,255,255,0.78);
+      background: rgba(255,255,255,.78);
     }
 
     .cart-header h3 {
@@ -559,7 +699,7 @@
       display: flex;
       flex-direction: column;
       gap: 14px;
-      background: rgba(248,250,255,0.7);
+      background: rgba(248,250,255,.7);
     }
 
     .cart-item {
@@ -567,11 +707,11 @@
       grid-template-columns: 60px 1fr auto;
       gap: 12px;
       align-items: center;
-      background: rgba(255,255,255,0.96);
+      background: rgba(255,255,255,.96);
       padding: 12px;
       border-radius: 12px;
-      border: 1px solid rgba(90,169,193,0.12);
-      box-shadow: 0 8px 26px rgba(10, 12, 18, 0.06);
+      border: 1px solid rgba(90,169,193,.12);
+      box-shadow: 0 8px 26px rgba(10,12,18,.06);
     }
 
     .cart-item img {
@@ -589,8 +729,8 @@
     }
 
     .qty-btn {
-      background: rgba(90,169,193,0.10);
-      border: 1px solid rgba(90,169,193,0.22);
+      background: rgba(90,169,193,.10);
+      border: 1px solid rgba(90,169,193,.22);
       color: var(--text);
       width: 32px;
       height: 32px;
@@ -603,8 +743,8 @@
 
     .cart-footer {
       padding: 20px;
-      background: rgba(255,255,255,0.92);
-      border-top: 1px solid rgba(90,169,193,0.14);
+      background: rgba(255,255,255,.92);
+      border-top: 1px solid rgba(90,169,193,.14);
     }
 
     .total-row {
@@ -634,11 +774,11 @@
 
     .toast {
       position: fixed;
-      bottom: calc(max(var(--safe-bottom), 30px) + 70px);
+      bottom: calc(max(var(--safe-bottom),30px) + 70px);
       left: 50%;
       transform: translateX(-50%) translateY(100px);
-      background: rgba(255,255,255,0.96);
-      border: 1px solid rgba(90,169,193,0.28);
+      background: rgba(255,255,255,.96);
+      border: 1px solid rgba(90,169,193,.28);
       color: var(--text);
       padding: 14px 28px;
       border-radius: 999px;
@@ -646,12 +786,12 @@
       box-shadow: var(--shadow), var(--glow-sky);
       z-index: 200;
       opacity: 0;
-      transition: 0.4s;
+      transition: .4s;
       display: flex;
       align-items: center;
       gap: 12px;
       max-width: 90%;
-      font-size: 0.85rem;
+      font-size: .85rem;
     }
 
     .toast.show {
@@ -661,7 +801,7 @@
 
     .moon-phase {
       font-size: 1.4rem;
-      animation: moonCycle 0.6s ease-in-out infinite;
+      animation: moonCycle .6s ease-in-out infinite;
     }
 
     @keyframes moonCycle {
@@ -690,10 +830,10 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      background: rgba(255,255,255,0.96);
+      background: rgba(255,255,255,.96);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      border-top: 1px solid rgba(90,169,193,0.16);
+      border-top: 1px solid rgba(90,169,193,.16);
       z-index: 40;
       display: flex;
       justify-content: space-around;
@@ -703,7 +843,7 @@
     .mobile-nav-item {
       color: var(--text-muted);
       text-decoration: none;
-      font-size: 0.7rem;
+      font-size: .7rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -723,34 +863,30 @@
       text-shadow: var(--glow-sky);
     }
 
-    @media (max-width: 768px) {
+    @media (max-width:768px) {
       header .cart-trigger { display: none; }
-      .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .product-grid { grid-template-columns: 1fr; }
       .brand-logo { font-size: 1.55rem; }
     }
 
-    @media (min-width: 769px) {
+    @media (min-width:769px) {
       .mobile-bottom-nav { display: none; }
       .grid-2 { grid-template-columns: 1fr 1fr; }
       .product-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
     }
 
-    .aura, #canvas, .product-card, .btn-glow, .btn-add {
-      will-change: transform;
-    }
+    .aura, #canvas, .product-card, .btn-glow, .btn-add { will-change: transform; }
   </style>
 </head>
 <body>
-
   <div class="loader" id="loader">
-    <h1 style="font-size: 2.35rem; font-weight: 900; letter-spacing: -1px; text-transform: uppercase; background: linear-gradient(90deg, var(--text), var(--sky)); -webkit-background-clip: text; color: transparent; line-height: 1.2; text-align:center; font-family: var(--font-body);">
+    <h1 style="font-size:2.35rem;font-weight:900;letter-spacing:-1px;text-transform:uppercase;background:linear-gradient(90deg,var(--text),var(--sky));-webkit-background-clip:text;color:transparent;line-height:1.2;text-align:center;font-family:var(--font-body);">
       LILY JUMPER<br>
-      <span style="font-size: 1rem; letter-spacing: 4px; display: block; margin-top: 10px; color: var(--text-muted); font-weight: 500;">Evolución y Luz</span>
+      <span style="font-size:1rem;letter-spacing:4px;display:block;margin-top:10px;color:var(--text-muted);font-weight:500;">Evolución y Luz</span>
     </h1>
   </div>
 
   <canvas id="canvas"></canvas>
-
   <div class="aura aura-1"></div>
   <div class="aura aura-2"></div>
 
@@ -790,7 +926,7 @@
           </ul>
         </div>
         <div class="glitch-box reveal">
-          <div style="font-size: 4rem; color: var(--violet); text-shadow: var(--glow-violet);">🌕</div>
+          <div style="font-size:4rem;color:var(--violet);text-shadow:var(--glow-violet);">🌕</div>
         </div>
       </div>
     </section>
@@ -807,7 +943,7 @@
   <footer>
     <div class="container footer-grid">
       <div class="footer-col">
-        <div class="brand-logo" style="margin-bottom: 15px;">Lily<span>Jumper</span></div>
+        <div class="brand-logo" style="margin-bottom:15px;">Lily<span>Jumper</span></div>
         <p>Herramientas de evolución para quienes no se rinden.</p>
       </div>
       <div class="footer-col">
@@ -818,29 +954,19 @@
       </div>
       <div class="footer-col">
         <h4>Contacto</h4>
-        <a href="https://wa.me/573127839758" target="_blank" style="color: var(--sky);">WhatsApp Directo</a>
+        <a href="https://wa.me/573127839758" target="_blank" style="color:var(--sky);">WhatsApp Directo</a>
         <a href="#">Instagram</a>
         <a href="#">TikTok</a>
       </div>
     </div>
-    <div class="container">
-      &copy; 2026 Lily Jumper. Todos los derechos reservados.
-    </div>
+    <div class="container">&copy; 2026 Lily Jumper. Todos los derechos reservados.</div>
   </footer>
 
   <nav class="mobile-bottom-nav">
-    <a href="#" class="mobile-nav-item active">
-      <span>🏠</span>
-      Inicio
-    </a>
-    <a href="#tienda" class="mobile-nav-item" onclick="return goToStore(event);">
-      <span>⚡</span>
-      Tienda
-    </a>
+    <a href="#" class="mobile-nav-item active"><span>🏠</span>Inicio</a>
+    <a href="#tienda" class="mobile-nav-item" onclick="return goToStore(event);"><span>⚡</span>Tienda</a>
     <a href="#" class="mobile-nav-item" onclick="toggleCart(); return false;">
-      <span style="position: relative;">
-        🛒 <span id="cartBadgeMobile" style="position:absolute; top:-3px; right:-5px; background:var(--sky); color:#fff; border-radius:50%; width:14px; height:14px; font-size:9px; display:grid; place-items:center; font-weight:bold;">0</span>
-      </span>
+      <span style="position:relative;">🛒 <span id="cartBadgeMobile" style="position:absolute; top:-3px; right:-5px; background:var(--sky); color:#fff; border-radius:50%; width:14px; height:14px; font-size:9px; display:grid; place-items:center; font-weight:bold;">0</span></span>
       Carga
     </a>
   </nav>
@@ -867,155 +993,161 @@
   </div>
 
   <script>
-    const STORAGE_KEY = 'lilyjumper_cart_v1';
-    const canvas = document.getElementById('canvas');
-    const ctx = canvas.getContext('2d');
-    let particles = [];
+    const STORAGE_KEY='lilyjumper_cart_v1';
+    const canvas=document.getElementById('canvas');
+    const ctx=canvas.getContext('2d');
+    let particles=[];
 
-    function initParticles() {
-      const dpr = window.devicePixelRatio || 1;
-      canvas.width = window.innerWidth * dpr;
-      canvas.height = window.innerHeight * dpr;
-      canvas.style.width = window.innerWidth + 'px';
-      canvas.style.height = window.innerHeight + 'px';
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      particles = [];
-      const count = window.innerWidth < 769 ? 55 : 90;
-      for (let i = 0; i < count; i++) {
-        particles.push({
-          x: Math.random() * window.innerWidth,
-          y: Math.random() * window.innerHeight,
-          r: Math.random() * 2
-        });
-      }
+    function initParticles(){
+      const dpr=window.devicePixelRatio||1;
+      canvas.width=window.innerWidth*dpr;
+      canvas.height=window.innerHeight*dpr;
+      canvas.style.width=window.innerWidth+'px';
+      canvas.style.height=window.innerHeight+'px';
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+      particles=[];
+      const count=window.innerWidth<769?55:90;
+      for(let i=0;i<count;i++) particles.push({x:Math.random()*window.innerWidth,y:Math.random()*window.innerHeight,r:Math.random()*2});
     }
 
-    function animateParticles() {
-      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
-      ctx.fillStyle = "rgba(90,169,193,0.92)";
-      particles.forEach(p => {
+    function animateParticles(){
+      ctx.clearRect(0,0,window.innerWidth,window.innerHeight);
+      ctx.fillStyle='rgba(90,169,193,0.92)';
+      particles.forEach(p=>{
         ctx.beginPath();
-        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
         ctx.fill();
-        p.y -= 0.18;
-        if (p.y < 0) p.y = window.innerHeight;
+        p.y-=0.18;
+        if(p.y<0)p.y=window.innerHeight;
       });
       requestAnimationFrame(animateParticles);
     }
 
-    const products = Array.from({ length: 12 }, (_, i) => ({
-      id: i + 1,
-      name: `Neón Jumper v${i + 1}.0`,
-      desc: 'Material reflectante, rodamientos de alta velocidad.',
-      price: 49000 + (Math.floor(Math.random() * 4) * 5000),
-      img: `images/${i + 1}.jpg`
-    }));
+    const names=['PVC 4mm','PVC 5mm','PVC 7mm','Segmentada'];
+    const prices=[69900,69900,89900,79900];
+    const descriptions=['Ligera, ideal para velocidad y técnica.','Equilibrio entre control y fluidez.','Más presencia y resistencia para entrenamientos intensos.','Ideal para ritmo, control y aprendizaje.'];
+    const extraTitle=['Velocidad y técnica','Control y fluidez','Resistencia e intensidad','Ritmo y aprendizaje'];
+    const extraText=['Perfecta si quieres una cuerda ágil y ligera para moverte rápido.','Muy cómoda para un salto estable y fluido en sesiones diarias.','Pensada para quienes entrenan fuerte y buscan más presencia.','Muy buena para progresar con confianza y mantener el ritmo.'];
+    const extraMini=['Recomendada para velocidad.','Recomendada para equilibrio.','Recomendada para potencia.','Recomendada para progreso.'];
 
-    const formatPrice = num => new Intl.NumberFormat('es-CO', {
-      style: 'currency',
-      currency: 'COP',
-      maximumFractionDigits: 0
-    }).format(num);
+    const products=Array.from({length:18},(_,i)=>{
+      const idx=i%4;
+      return {
+        id:i+1,
+        name:names[idx],
+        price:prices[idx],
+        desc:descriptions[idx],
+        img:`images/${i+1}.jpg`,
+        energy:extraTitle[idx],
+        use:extraText[idx],
+        benefit:extraMini[idx],
+        phase:['🌕','🌖','🌗','🌘'][idx],
+        accent:idx%2===0?'sky':'violet'
+      };
+    });
+
+    const formatPrice=num=>new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(num);
 
     document.getElementById('productGrid').innerHTML = products.map(p => `
-      <div class="product-card reveal">
+      <div class="product-card reveal" id="card-${p.id}">
         <div class="card-content">
-          <div class="card-img">
-            <img src="${p.img}" alt="${p.name}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNkZGUzZWUiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzVhYTljMSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlYke3AuaWR9PC90ZXh0Pjwvc3ZnPg=='" loading="lazy">
+          <div class="carousel-wrap">
+            <div class="carousel-stage">
+              <div class="face front">
+                <div class="card-img">
+                  <img src="${p.img}" alt="${p.id}.jpg" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNkZGUzZWUiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzVhYTljMSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlBob3RvPC90ZXh0Pjwvc3ZnPg=='">
+                </div>
+              </div>
+              <div class="face back">
+                <div class="back-badge">${p.phase} Energía extra</div>
+                <div class="back-title">${p.name}</div>
+                <div class="back-text">${p.energy}</div>
+                <div class="back-mini">${p.use}</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-badges">
+            <span class="pill ${p.accent}">${p.phase}</span>
+            <span class="pill ${p.accent==='sky'?'violet':'sky'}">#${p.id}</span>
           </div>
           <div class="card-title">${p.name}</div>
-          <div style="font-size: 0.85rem; color: var(--text-muted); flex: 1;">${p.desc}</div>
           <div class="card-price">${formatPrice(p.price)}</div>
+          <div class="card-copy">${p.desc}</div>
+          <div class="btn-row">
+            <button class="btn-more" onclick="toggleExtra(${p.id})">Ver más</button>
+            <button class="btn-add" onclick="flipCard(${p.id})">Fase</button>
+          </div>
+          <div class="extra-panel" id="extra-${p.id}">
+            <div style="font-weight:800;color:var(--text);margin-bottom:6px;">${p.energy}</div>
+            <div style="font-size:.85rem;color:var(--text-muted);line-height:1.5;">${p.use}</div>
+            <div style="margin-top:8px;font-size:.8rem;color:var(--sky);font-weight:700;">${p.benefit}</div>
+          </div>
           <button class="btn-add" onclick="addToCart(${p.id})">Añadir</button>
         </div>
       </div>
     `).join('');
 
-    const cartPanel = document.getElementById('cartPanel');
-    const cartOverlay = document.getElementById('cartOverlay');
-    const cartBody = document.getElementById('cartBody');
-    const cartBadgeHeader = document.getElementById('cartBadgeHeader');
-    const cartBadgeMobile = document.getElementById('cartBadgeMobile');
-    const cartTotal = document.getElementById('cartTotal');
-    const checkoutBtn = document.getElementById('checkoutBtn');
-    const moonIcon = document.getElementById('moonIcon');
-    let cart = [];
+    const cartPanel=document.getElementById('cartPanel');
+    const cartOverlay=document.getElementById('cartOverlay');
+    const cartBody=document.getElementById('cartBody');
+    const cartBadgeHeader=document.getElementById('cartBadgeHeader');
+    const cartBadgeMobile=document.getElementById('cartBadgeMobile');
+    const cartTotal=document.getElementById('cartTotal');
+    const checkoutBtn=document.getElementById('checkoutBtn');
+    const moonIcon=document.getElementById('moonIcon');
+    let cart=[];
 
-    function saveCart() {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(cart));
-    }
+    function saveCart(){localStorage.setItem(STORAGE_KEY,JSON.stringify(cart))}
+    function loadCart(){try{cart=JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]')}catch(e){cart=[]}}
+    function toggleCart(){cartPanel.classList.toggle('active');cartOverlay.classList.toggle('active');document.body.style.overflow=cartPanel.classList.contains('active')?'hidden':''}
+    function goToStore(e){if(e)e.preventDefault(); document.getElementById('tienda').scrollIntoView({behavior:'smooth',block:'start'}); return false}
+    function toggleExtra(id){const el=document.getElementById('extra-'+id); if(el) el.classList.toggle('show')}
+    function flipCard(id){const c=document.getElementById('card-'+id); if(c) c.classList.toggle('flipped')}
 
-    function loadCart() {
-      try {
-        const raw = localStorage.getItem(STORAGE_KEY);
-        cart = raw ? JSON.parse(raw) : [];
-      } catch (e) {
-        cart = [];
-      }
-    }
-
-    function toggleCart() {
-      cartPanel.classList.toggle('active');
-      cartOverlay.classList.toggle('active');
-      document.body.style.overflow = cartPanel.classList.contains('active') ? 'hidden' : '';
-    }
-
-    function goToStore(e) {
-      if (e) e.preventDefault();
-      const section = document.getElementById('tienda');
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-      return false;
-    }
-
-    function addToCart(id) {
-      const product = products.find(p => p.id === id);
-      const exists = cart.find(i => i.id === id);
-      if (exists) exists.qty++;
-      else cart.push({ ...product, qty: 1 });
-
+    function addToCart(id){
+      const product=products.find(p=>p.id===id);
+      const exists=cart.find(i=>i.id===id);
+      if(exists) exists.qty++;
+      else cart.push({...product,qty:1});
       saveCart();
-
-      const moonPhases = ['🌕', '🌖', '🌗', '🌘', '🌑', '🌒', '🌓', '🌔'];
-      let phaseIndex = 0;
-      const moonAnimation = setInterval(() => {
-        moonIcon.textContent = moonPhases[phaseIndex];
+      const moonPhases=['🌕','🌖','🌗','🌘','🌑','🌒','🌓','🌔'];
+      let phaseIndex=0;
+      const moonAnimation=setInterval(()=>{
+        moonIcon.textContent=moonPhases[phaseIndex];
         phaseIndex++;
-        if (phaseIndex >= moonPhases.length) {
+        if(phaseIndex>=moonPhases.length){
           clearInterval(moonAnimation);
-          moonIcon.textContent = '🌕';
+          moonIcon.textContent='🌕';
         }
-      }, 75);
-
+      },75);
       showToast(`${product.name} sincronizado`);
       updateCart();
     }
 
-    function updateQty(id, delta) {
-      const item = cart.find(i => i.id === id);
-      if (!item) return;
-      item.qty += delta;
-      if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
+    function updateQty(id,delta){
+      const item=cart.find(i=>i.id===id);
+      if(!item) return;
+      item.qty+=delta;
+      if(item.qty<=0) cart=cart.filter(i=>i.id!==id);
       saveCart();
       updateCart();
     }
 
-    function updateCart() {
-      const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
-      cartBadgeHeader.textContent = totalItems;
-      cartBadgeMobile.textContent = totalItems;
+    function updateCart(){
+      const totalItems=cart.reduce((acc,item)=>acc+item.qty,0);
+      cartBadgeHeader.textContent=totalItems;
+      cartBadgeMobile.textContent=totalItems;
 
-      if (cart.length === 0) {
-        cartBody.innerHTML = `<div style="text-align:center; color:var(--text-muted); margin:auto; padding:40px 20px;">La carga está vacía<br>Inicia tu selección</div>`;
-        cartTotal.textContent = '$0';
-        checkoutBtn.style.pointerEvents = 'none';
-        checkoutBtn.style.opacity = '0.45';
-        checkoutBtn.href = '#';
+      if(cart.length===0){
+        cartBody.innerHTML='<div style="text-align:center; color:var(--text-muted); margin:auto; padding:40px 20px;">La carga está vacía<br>Inicia tu selección</div>';
+        cartTotal.textContent='$0';
+        checkoutBtn.style.pointerEvents='none';
+        checkoutBtn.style.opacity='0.45';
+        checkoutBtn.href='#';
         return;
       }
 
-      cartBody.innerHTML = cart.map(item => `
+      cartBody.innerHTML=cart.map(item=>`
         <div class="cart-item">
           <img src="${item.img}" alt="${item.name}" onerror="this.style.display='none'" loading="lazy">
           <div>
@@ -1030,51 +1162,49 @@
         </div>
       `).join('');
 
-      const total = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
-      cartTotal.textContent = formatPrice(total);
-      checkoutBtn.style.pointerEvents = 'auto';
-      checkoutBtn.style.opacity = '1';
+      const total=cart.reduce((acc,item)=>acc+(item.price*item.qty),0);
+      cartTotal.textContent=formatPrice(total);
+      checkoutBtn.style.pointerEvents='auto';
+      checkoutBtn.style.opacity='1';
 
-      let msg = '🌕 LILY JUMPER - SINCRONIZACION 🌕\n\n';
-      msg += 'Hola! Quiero sincronizar mi carga:\n\n';
-      cart.forEach(i => {
-        msg += `🌖 ${i.qty}x ${i.name} - ${formatPrice(i.price * i.qty)}\n`;
-      });
-      msg += `\n🌗 TOTAL: ${formatPrice(total)}\n\n`;
-      msg += `🌘 Ciudad: [Tu ciudad]\n`;
-      msg += `🌑 Ref: [Tu referencia]\n\n`;
-      msg += '🌕 ¿Me confirmas disponibilidad?';
-      checkoutBtn.href = `https://wa.me/573127839758?text=${encodeURIComponent(msg)}`;
+      let msg='🌕 LILY JUMPER - SINCRONIZACION 🌕\n\n';
+      msg+='Hola! Quiero sincronizar mi carga:\n\n';
+      cart.forEach(i=>{msg+=`🌖 ${i.qty}x ${i.name} - ${formatPrice(i.price*i.qty)}\n`});
+      msg+=`\n🌗 TOTAL: ${formatPrice(total)}\n\n`;
+      msg+=`🌘 Ciudad: [Tu ciudad]\n`;
+      msg+=`🌑 Ref: [Tu referencia]\n\n`;
+      msg+='🌕 ¿Me confirmas disponibilidad?';
+      checkoutBtn.href=`https://wa.me/573127839758?text=${encodeURIComponent(msg)}`;
     }
 
     let toastTimeout;
-    function showToast(msg) {
-      const toast = document.getElementById('toastMsg');
-      toast.querySelector('.toast-text').textContent = msg;
+    function showToast(msg){
+      const toast=document.getElementById('toastMsg');
+      toast.querySelector('.toast-text').textContent=msg;
       toast.classList.add('show');
       clearTimeout(toastTimeout);
-      toastTimeout = setTimeout(() => toast.classList.remove('show'), 2500);
+      toastTimeout=setTimeout(()=>toast.classList.remove('show'),2500);
     }
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
+    const observer=new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
           entry.target.classList.add('show');
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    },{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
 
-    window.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    window.addEventListener('DOMContentLoaded',()=>{
+      document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
       loadCart();
       updateCart();
     });
 
-    window.addEventListener('load', () => {
+    window.addEventListener('load',()=>{
       initParticles();
       animateParticles();
-      setTimeout(() => document.getElementById('loader').classList.add('fade-out'), 1200);
+      setTimeout(()=>document.getElementById('loader').classList.add('fade-out'),1200);
     });
 
     window.addEventListener('resize', initParticles);
